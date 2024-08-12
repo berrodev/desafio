@@ -1,0 +1,81 @@
+header {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 40vh;
+  width: 100%;
+  background-image: url('../assets/images/restaurant.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  gap: 40px;
+}
+
+.title {
+  background-color: #33333369;
+  text-align: center;
+  width: 100%;
+}
+.product-list {
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.product-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.product-card img {
+  max-width: 300px;
+  width: 100%;
+}
+.product-card h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.product-card p {
+  font-size: 1rem;
+  margin: 0;
+  text-align: right;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+footer a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+footer a:hover {
+  color: #f1c40f;
+}
+.social-logo {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
