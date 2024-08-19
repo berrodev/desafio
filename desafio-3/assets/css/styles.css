@@ -21,3 +21,19 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10%;
+}
+.description {
+  display: flex;
+}
+.description p {
+}
+.description img {
+  max-width: 400px;
+}
