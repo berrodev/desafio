@@ -1,3 +1,13 @@
 body {
   font-family: Roboto, sans-serif !important;
 }
+.bg-success {
+  && {
+    background-color: #28a745 !important;
+  }
+}
+.text-success {
+  && {
+    color: #28a745 !important;
+  }
+}
