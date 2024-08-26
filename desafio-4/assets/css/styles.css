@@ -11,3 +11,7 @@ body {
     color: #28a745 !important;
   }
 }
+
+.card img {
+  aspect-ratio: 1050/700;
+}
