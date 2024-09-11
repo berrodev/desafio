@@ -18,6 +18,10 @@ body {
       color: #e6af2e !important;
     }
   }
+
+  section {
+    height: 100vh;
+  }
 }
 
 nav {
