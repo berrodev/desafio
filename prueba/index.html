@@ -31,7 +31,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
           <a class="navbar-brand fw-bold" aria-current="page" href="#"
             >Francisco Berroeta</a
@@ -64,7 +64,7 @@
       <div class="container">
         <section
           id="hero"
-          class="row justify-content-center align-items-center"
+          class="row justify-content-between align-items-center"
         >
           <div class="col-6">
             <h1 class="title">
@@ -84,13 +84,13 @@
           </div>
         </section>
         <!-- EDUCACIÓN -->
-        <section id="education" class="row">
+        <section id="education" class="row align-content-center">
           <div class="col-12">
-            <h2 class="text-center my-4">Educación</h2>
+            <h2 class="my-4">Educación</h2>
           </div>
           <div class="col-12 col">
-            <h3 class="">Universidad Tecnológica de Chile INACAP</h3>
-            <p>Ingeniero Informático (Marzo, 2024)</p>
+            <h3 class="fs-5">Universidad Tecnológica de Chile INACAP</h3>
+            <p class="fs-6">Ingeniero Informático (Marzo, 2024)</p>
           </div>
           <div class="col-12">
             <h3>Universidad Tecnológica de Chile INACAP</h3>
@@ -98,10 +98,8 @@
           </div>
         </section>
         <!-- EXPERIENCIA -->
-        <section id="experience" class="row">
-          <div class="col-12">
-            <h2 class="text-center my-4">Experiencia</h2>
-          </div>
+        <section id="experience" class="row align-content-center">
+          <h2 class="text-center my-4">Experiencia</h2>
           <div class="col-12 col -md-6">
             <h3>Desarrollador Frontend</h3>
             <p>Empresa de Desarrollo Web (2021 - 2023)</p>
@@ -112,7 +110,7 @@
           </div>
         </section>
         <!-- PORTFOLIO -->
-        <section id="portfolio" class="row">
+        <section id="portfolio" class="row align-content-center">
           <div class="col-12">
             <h2 class="text-center my-4 col-12">Portafolio</h2>
           </div>
@@ -318,27 +316,6 @@
             </div>
           </div>
         </section>
-        <form
-          onsubmit="alert('mensaje enviado')"
-          class="row bg-success p-4 justify-content-center gap-2"
-        >
-          <h5 class="text-white text-center">Recibe cupones en tu correo</h5>
-          <input
-            type="text"
-            class="form-control fw-light text-secondary"
-            aria-label="Nombre"
-            placeholder="Nombre"
-          />
-          <input
-            type="text"
-            class="form-control fw-light text-secondary"
-            aria-label="Correo Electrónico"
-            placeholder="Correo Electrónico"
-          />
-          <button type="submit" class="btn btn-light" style="width: 100px">
-            Enviar
-          </button>
-        </form>
       </div>
     </main>
     <footer>
