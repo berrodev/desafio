@@ -31,7 +31,8 @@ body {
   }
 }
 
-nav {
+nav,
+footer {
   background-color: #e0e2db;
 }
 .hero-img {
