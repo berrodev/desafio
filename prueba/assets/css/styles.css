@@ -22,7 +22,12 @@ body {
   section {
     min-height: 100vh;
     max-width: 56rem;
-    margin: 0 auto !important;
+    margin: 4rem auto !important;
+    ul {
+      gap: 2.5rem !important;
+      font-size: 1rem;
+      font-weight: 200;
+    }
   }
 }
 
