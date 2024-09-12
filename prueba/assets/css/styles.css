@@ -38,3 +38,11 @@ footer {
 .hero-img {
   border-radius: 10%;
 }
+
+#portfolio .card.text-secondary.h-100,
+nav a {
+  transition: scale 0.5s ease;
+  &:hover {
+    scale: 1.1;
+  }
+}
