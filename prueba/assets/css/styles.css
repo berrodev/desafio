@@ -3,6 +3,9 @@
 :root {
   --nav-height: 56px;
 }
+nav {
+  height: var(--nav-height);
+}
 body {
   background-color: #191716 !important;
   font-family: 'Roboto', sans-serif !important;
