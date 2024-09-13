@@ -25,6 +25,10 @@ body {
     }
   }
 
+  p {
+    letter-spacing: 1px !important;
+  }
+
   section {
     min-height: calc(100vh - var(--nav-height));
     max-width: 56rem;
