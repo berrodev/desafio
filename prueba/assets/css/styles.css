@@ -62,7 +62,8 @@ footer {
 }
 
 #portfolio .card.text-secondary.h-100,
-nav a {
+nav a,
+.custom-link {
   transition: scale 0.5s ease;
   &:hover {
     scale: 1.1;
