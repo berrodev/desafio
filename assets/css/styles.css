@@ -24,6 +24,13 @@ body {
       color: #e6af2e !important;
     }
   }
+  #hero {
+    @media (width < 768px) {
+      flex-direction: column-reverse;
+      justify-content: center !important;
+      gap: 1rem;
+    }
+  }
 
   p {
     letter-spacing: 1px !important;
