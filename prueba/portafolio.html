@@ -1,41 +1,292 @@
 <!DOCTYPE html>
-<style>
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  tr, td, th {
-    border: 1px solid #0f0f0f;
-    padding: 10px;
-  }
-</style>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
+    <title>Portafolio - Desafío Latam</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/dd415ae4db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
-    <nav><a href="/index.html">⬅️ Volver</a></nav>
-    <h1>Proyectos</h1>
-    <table>
-      <tr>
-        <th>Currículum Vitae</th>
-        <td>
-          <img
-            src="./images/cv_screenshot.webp"
-            alt="Captura de pantalla del currículum vitae de Francisco Berroeta"
-            width="400"
-          />
-        </td>
-      </tr>
-      <tr>
-        <th>Proyecto 1</th>
-        <td></td>
-      </tr>
-      <tr>
-        <th>Proyecto 2</th>
-        <td></td>
-      </tr>
-    </table>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand fw-bold" aria-current="page" href="#"
+            >Francisco Berroeta</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" href="#education">Educación</a>
+              <a class="nav-link" href="#experience">Experiencia</a>
+              <a class="nav-link" href="#portfolio">Proyectos</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="text-light">
+      <div class="container">
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="row align-content-center fix-scroll">
+          <div class="col-12">
+            <h2 class="text-center my-4 col-12">Portafolio</h2>
+          </div>
+          <!-- Muariziano Propiedades -->
+          <div class="col-12 my-4 col-md-6 col-lg-4">
+            <div class="card text-secondary h-100">
+              <img
+                src="./assets/img/proyectos/buscador-mauriziano-propiedades.webp"
+                class="card-img-top project-img"
+                alt="imagen de captura de pantalla del buscador de propiedades de Rossana Mauriziano Propiedades"
+              />
+              <div class="card-body d-flex flex-column justify-content-start">
+                <h5 class="custom-card-title fw-light text-dark">
+                  Rossana Mauriziano Propiedades
+                </h5>
+                <div class="card-content">
+                  <p class="card-text fw-light">
+                    Desarrollo del sitio web de Rossana Mauriziano Propiedades y
+                    del buscador de propiedades.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="d-flex justify-content-center align-items-baseline gap-4 card-footer bg-dark text-white my-0"
+              >
+                <!-- Tecnologías -->
+
+                <li class="list-group-item" title="NextJS">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m4-14h-1.35v4H16zM9.346 9.71l6.059 7.828l1.054-.809L9.683 8H8v7.997h1.346z"
+                    />
+                  </svg>
+                </li>
+                <li class="list-group-item" title="MercadoLibre API">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 48 48"
+                  >
+                    <ellipse
+                      cx="24"
+                      cy="24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      rx="19.5"
+                      ry="12.978"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.704 15.53a20.8 20.8 0 0 0 6.386 1.866a23 23 0 0 0 4.546-.773"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M38.882 15.614a8.6 8.6 0 0 1-5.165 1.485c-3.335 0-6.225-2.199-9.215-2.199c-2.668 0-7.189 4.373-7.189 5.164s1.31 1.26 2.372.74c.621-.303 3.31-2.914 5.484-2.914s9.219 7.136 9.857 7.806c.989 1.038-.926 3.274-2.149 2.05s-3.41-3.162-3.41-3.162"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M43.4 22.683a24 24 0 0 0-8.547 2.692m-2.273 2.081c.989 1.037-.926 3.273-2.149 2.05s-2.581-2.513-2.581-2.513"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M30.135 29.215c.988 1.037-.927 3.273-2.15 2.05s-2.025-1.962-2.025-1.962"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M24.202 31.316a2.31 2.31 0 0 0 3.648-.186"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M24.202 31.316c.53-.697.49-3.182-2.244-2.688c.642-1.219.066-3.146-2.388-2.01a1.69 1.69 0 0 0-3.146-.658a1.455 1.455 0 0 0-2.8-.28c-.544 1.104.296 3.096 2.092 1.976c-.182 1.944.84 2.537 2.684 1.78c.099 1.91 1.367 1.745 2.273 1.3a1.938 1.938 0 0 0 3.529.58"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.67 22.279a18.3 18.3 0 0 1 9.064 3.214"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- CIES - SENAMA -->
+          <div class="col-12 my-4 col-md-6 col-lg-4">
+            <div class="card text-secondary h-100">
+              <img
+                src="./assets/img/proyectos/guia-beneficios-tercera-edad.webp"
+                class="card-img-top project-img"
+                alt="Portada de guía de beneficios para la tercera edad"
+              />
+              <div class="card-body d-flex flex-column justify-content-start">
+                <h5 class="custom-card-title fw-light text-dark">
+                  CIES - SENAMA
+                </h5>
+                <div class="card-content">
+                  <p class="card-text fw-light">
+                    Diseño de guía de beneficios del estado para personas
+                    mayores de lectura fácil.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="d-flex justify-content-center align-items-baseline gap-4 card-footer bg-dark text-white my-0"
+              >
+                <!-- Tecnologías -->
+
+                <li class="list-group-item">
+                  <i class="fa-brands fa-figma" title="Figma"></i>
+                </li>
+                <li class="list-group-item" title="Adobe Indesign">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M4.25.3C1.9.3 0 2.2 0 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm11.31 5.13h2.03c.05-.01.09.03.1.07v9.54c0 .18.01.38.02.6c.02.21.03.41.04.58c0 .07-.03.13-.1.16c-.52.22-1.07.38-1.63.48c-.5.09-1.02.14-1.54.14c-.74.01-1.48-.14-2.15-.45c-.63-.29-1.15-.77-1.51-1.36c-.37-.61-.55-1.37-.55-2.28c-.01-.74.18-1.47.55-2.11c.38-.65.93-1.19 1.59-1.55c.7-.39 1.54-.58 2.53-.58c.05 0 .12 0 .21.01s.19.01.31.02V5.54c0-.07.03-.11.1-.11m-8.93.86h1.95c.06-.01.12.03.13.1c.01.01.01.02.01.03v10.26c0 .11-.05.16-.14.16H6.62c-.09 0-.13-.05-.13-.16V6.42c0-.09.05-.13.14-.13m8.23 4.24c-.39 0-.78.08-1.13.26c-.34.17-.63.42-.85.74s-.33.75-.33 1.27c-.01.35.05.7.17 1.03c.1.27.25.51.45.71c.19.18.42.32.68.4c.27.09.55.13.83.13c.15 0 .29-.01.42-.02c.13.01.25-.01.36-.05v-4.4a2.6 2.6 0 0 0-.6-.07"
+                    />
+                  </svg>
+                </li>
+                <li class="list-group-item" title="GIMP">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M19.848 1.636c-.106-.016-.228.107-.324.397c-.157.47-1.073 3.203-5.504 4.326c.596.512.976 1.242.976 2.059c0 1.547-1.344 2.8-3 2.8s-2.997-1.254-2.998-2.8c0-.603.208-1.158.555-1.616c-3.135-.322-4.49-3.123-4.49-3.123l-.096 4.163c-.025.564-.009 1.111-.27 1.636a3.335 2.365 54.527 0 0-.05-.072a3.335 2.365 54.527 0 0-2.849-1.654a3.335 2.365 54.527 0 0-1.013.334a3.335 2.365 54.527 0 0 .029 4.095a3.335 2.365 54.527 0 0 3.291 1.59c2.997 2.22 8.482 4.148 12.231 1.885l-2.025-1.629c-1.064.345-2.604.34-4.397-.295c2.9.582 4.47-.053 5.334-.722c-.228-.296-.71-.526-.71-.526s.563.107.93.496c.147.155.198.387.218.653c.553.298 1.183.656 1.875 1.062c2.06-2.06 3.253-5.933 2.52-12.617c-.035-.269-.127-.425-.233-.442M6.855 7.096c1.051-.001 1.903.795 1.903 1.777c0 .98-.853 1.776-1.903 1.775c-1.05 0-1.9-.795-1.9-1.775c0-.981.85-1.777 1.9-1.778zm5.776.482a1.325 1.325 0 1 0-.002 2.65a1.325 1.325 0 0 0 .002-2.65m-10.942.639a.964.947 0 0 1 .002 0a.964.947 0 0 1 .021 0a.964.947 0 0 1 .965.949a.964.947 0 0 1-.965.947a.964.947 0 0 1-.962-.947a.964.947 0 0 1 .94-.95zm5.559.123a.84.84 0 1 0 .02 1.68a.84.84 0 0 0-.02-1.68m8.26 4.964c-.043.053-.103.099-.156.147l.21.115c-.017-.1-.033-.21-.054-.262m-.55.1l-.733.361l.06.05l.198.157l1.994 1.606l.015.012a82 82 0 0 0 1.952 1.513a.5.5 0 0 0-.008.127l.26-.04l.103.152l2.317 1.472c-.12.41-.065.953.207 1.457c.79 1.465 2.677 2.094 2.677 2.094c-.771-1.968-.209-3.569-1.73-4.133c-.242-.09-.453-.093-.629-.033l-2.047-1.895l-.174-.052l-.025-.262a1 1 0 0 0-.12.059c-.306-.26-.687-.537-1.09-.815c-1.364-.835-2.257-1.3-3.228-1.83z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Derma&Plastic -->
+          <div class="col-12 my-4 col-md-6 col-lg-4">
+            <div class="card text-secondary h-100">
+              <img
+                src="./assets/img/proyectos/dp.webp"
+                class="card-img-top project-img"
+                alt="imagen de captura de pantalla del sitio dermaplastic"
+              />
+              <div class="card-body d-flex flex-column justify-content-start">
+                <h5 class="custom-card-title fw-light text-dark">
+                  Derma&Plastic
+                </h5>
+                <div class="card-content">
+                  <p class="card-text fw-light">
+                    Desarrollo del sitio web de cliníca dermatológica
+                    Derma&Plastic.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="d-flex justify-content-center align-items-baseline gap-4 card-footer bg-dark text-white my-0"
+              >
+                <!-- Tecnologías -->
+
+                <li class="list-group-item">
+                  <i class="fa-brands fa-react" title="React"></i>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa-brands fa-wordpress" title="WordPress"></i>
+                </li>
+
+                <li class="list-group-item">
+                  <i class="fa-brands fa-js" title="JavaScript"></i>
+                </li>
+                <li class="list-group-item">
+                  <i class="fa-brands fa-php" title="php"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <p class="fw-dark text-secondary p-4 text-center m-0">
+          © 2024 Francisco Berroeta. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </body>
 </html>
