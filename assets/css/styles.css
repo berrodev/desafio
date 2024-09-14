@@ -63,6 +63,14 @@ body {
 nav,
 footer {
   background-color: #e0e2db;
+  .navbar-nav {
+    background-color: #e0e2db;
+    overflow: hidden;
+    a {
+      border-bottom: 1px solid #d9d9d9;
+      text-align: center;
+    }
+  }
 }
 .hero-img {
   border-radius: 10%;
