@@ -59,3 +59,10 @@ nav a {
     scale: 1.1;
   }
 }
+
+.project-img {
+  object-fit: scale-down;
+  max-height: 205px;
+  height: 205px;
+  background-color: whitesmoke;
+}
