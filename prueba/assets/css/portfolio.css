@@ -1,0 +1,16 @@
+body {
+  background-color: #f8f9fa;
+  .project-img {
+    background-color: whitesmoke;
+    padding: 5px;
+  }
+  .card-body {
+    background-color: grey;
+    color: white;
+
+    .custom-card-title {
+      color: white !important;
+      font-weight: bold !important;
+    }
+  }
+}
