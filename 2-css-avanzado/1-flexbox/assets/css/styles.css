@@ -33,6 +33,10 @@ main {
         border: none;
         font-size: 1.5rem;
         color: #828485;
+        cursor: pointer;
+        &:hover {
+          color: #cdc3e6;
+        }
       }
     }
     padding-inline: 20px;
