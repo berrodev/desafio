@@ -28,6 +28,12 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
+      button {
+        border: none;
+        font-size: 1.5rem;
+        color: #828485;
+      }
     }
     padding-inline: 20px;
   }
