@@ -3,44 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  height: 100vh;
+}
 main {
   font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #f5f5f5;
 }
 .navbar-side {
-  width: 100%;
-  height: 100%;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
   border: 1px solid #ccc;
-  & header {
+  & .navbar-header-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    .nav-buttons {
+    flex-direction: column;
+    height: 100%;
+    & header {
       display: flex;
+      flex-grow: 1;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
-      button {
-        border: none;
-        font-size: 1.5rem;
-        color: #828485;
-        cursor: pointer;
-        &:hover {
-          color: #cdc3e6;
+      border: 1px solid #ccc;
+      .nav-buttons {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        button {
+          border: none;
+          font-size: 1.5rem;
+          color: #828485;
+          cursor: pointer;
+          &:hover {
+            color: #cdc3e6;
+          }
         }
       }
+      padding-inline: 20px;
     }
-    padding-inline: 20px;
   }
+
   .users-list {
     display: flex;
     flex-direction: column;
@@ -49,26 +59,34 @@ main {
     list-style: none;
   }
 }
-.user-item {
+li {
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+.user-item-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
+  width: 80%;
+}
+.user-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  .users-list & {
-    cursor: pointer;
-    &:hover {
-      background-color: #f0f0f0;
-    }
-  }
+  padding: 5px 20px;
+  gap: 5px;
 
   header & {
     padding-inline: 0;
     width: inherit;
     flex-direction: row;
     justify-content: start;
-    border: none;
     img {
       width: 40px;
       height: 40px;
@@ -100,8 +118,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  flex: 4;
   text-align: center;
   & h1 {
     font-size: 45px;
@@ -120,8 +136,11 @@ main {
 }
 .new-chat-button-container {
   display: flex;
+  flex-grow: 2;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ccc;
+
   & button {
     padding: 10px 20px;
     border: none;
@@ -137,4 +156,7 @@ main {
       background-color: #bcc1bb;
     }
   }
+}
+h2 {
+  margin: 0 !important;
 }
