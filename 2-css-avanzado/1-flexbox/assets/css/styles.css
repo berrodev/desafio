@@ -21,6 +21,7 @@ main {
   flex-direction: column;
   width: 25%;
   border: 1px solid #ccc;
+  background-color: white;
   & .navbar-header-container {
     display: flex;
     flex-direction: column;
@@ -42,6 +43,8 @@ main {
           font-size: 1.5rem;
           color: #828485;
           cursor: pointer;
+          background-color: white;
+
           &:hover {
             color: #cdc3e6;
           }
@@ -72,7 +75,8 @@ li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
+  width: 85%;
+  max-width: 215px;
 }
 .user-item {
   display: flex;
@@ -84,7 +88,6 @@ li {
 
   header & {
     padding-inline: 0;
-    width: inherit;
     flex-direction: row;
     justify-content: start;
     img {
