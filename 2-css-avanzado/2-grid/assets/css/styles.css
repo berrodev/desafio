@@ -15,11 +15,9 @@ body {
 }
 
 header {
-  background-color: #ac583a;
   grid-area: header;
 }
 aside {
-  background-color: #ac583a;
   grid-area: aside;
 }
 main {
@@ -34,6 +32,7 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
 }
+
 .grid-item {
   background-color: #f1f1f1;
   border: 1px solid #ccc;
@@ -43,4 +42,10 @@ footer {
 
 ul {
   list-style: none;
+}
+
+header,
+aside {
+  background-color: #ac583a;
+  color: white;
 }
