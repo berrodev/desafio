@@ -12,16 +12,21 @@ body {
     'header header'
     'aside main'
     'footer footer';
+  gap: 20px;
 }
 
 header {
   grid-area: header;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
 }
 aside {
   grid-area: aside;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
 }
 main {
   grid-area: main;
@@ -37,22 +42,27 @@ footer {
 }
 
 .grid-item {
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
+  background-color: white;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.product-categories {
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 1rem;
+}
+.product-categories-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  gap: 1rem;
-}
-.product-categories {
-  display: flex;
-  flex-direction: column;
+  gap: 0.5rem;
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
 }
 .category-title {
   font-weight: bold;
