@@ -27,6 +27,8 @@ header {
   gap: 2rem;
 }
 main {
+  padding: 0 20px;
+  overflow: scroll;
   grid-area: main;
   padding-right: 20px;
 }
