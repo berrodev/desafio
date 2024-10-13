@@ -33,6 +33,24 @@ header {
   align-items: center;
   padding-block: 20px;
   gap: 3rem;
+  button {
+    display: none;
+    fill: white;
+    background: transparent;
+    border: none;
+    width: 32px;
+    svg {
+      height: auto;
+      background-color: transparent;
+    }
+  }
+  @media (width< 576px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    button {
+      display: block;
+    }
+  }
 }
 main {
   padding: 0 20px;
