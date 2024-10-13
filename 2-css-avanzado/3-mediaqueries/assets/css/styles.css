@@ -66,6 +66,7 @@ footer {
   gap: 1rem;
   align-items: center;
   padding: 20px;
+  justify-content: space-between;
   img {
     width: 100%;
 
