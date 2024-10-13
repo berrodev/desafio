@@ -12,6 +12,14 @@ body {
     'header main'
     'footer main';
   height: 100vh;
+  @media screen and (max-width: 576px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+  }
 }
 
 header {
@@ -123,6 +131,9 @@ nav {
       }
     }
   }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
 .social-media {
   display: flex;
@@ -157,6 +168,7 @@ nav {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin-block: 20px;
   li {
     a {
       text-decoration: none;
