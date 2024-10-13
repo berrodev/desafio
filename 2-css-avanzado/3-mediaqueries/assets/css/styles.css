@@ -147,3 +147,12 @@ nav {
     fill: rgb(191, 191, 191);
   }
 }
+.filter-form {
+  padding-block: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  label {
+    text-align: center;
+  }
+}
