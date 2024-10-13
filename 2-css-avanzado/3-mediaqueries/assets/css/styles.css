@@ -153,9 +153,9 @@ nav {
     display: none;
   }
 }
-.social-media {
+.social-container {
   display: flex;
-  gap: 10px;
+  gap: 0.5rem;
 }
 .fb-icon svg,
 .ig-icon svg {
