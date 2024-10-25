@@ -39,10 +39,6 @@ header {
     background: transparent;
     border: none;
     width: 32px;
-    svg {
-      height: auto;
-      background-color: transparent;
-    }
   }
   @media (width< 576px) {
     flex-direction: row;
@@ -119,13 +115,16 @@ footer {
 
 .title {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   h1 {
     font-size: 1.2rem;
     font-weight: normal;
+    text-transform: uppercase;
   }
-  img {
-    width: 1.2rem;
+  #disc-image {
+    width: 150px;
+    object-fit: cover;
   }
 }
 
