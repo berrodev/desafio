@@ -206,6 +206,10 @@ nav {
   &:hover .album-disc {
     animation: moveDisc 1s forwards;
   }
+  /* &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+  } */
 }
 .album-disc {
   width: 100%;
@@ -221,6 +225,21 @@ nav {
   z-index: 2;
 }
 
+.artist-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 /* Animations */
 @keyframes rotate {
   from {
