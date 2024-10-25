@@ -28,7 +28,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  background-color: #761229f2;
+  background-color: #131313;
   color: white;
   align-items: center;
   padding-block: 20px;
@@ -65,7 +65,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background-color: #761229;
+  background-color: #272727;
   color: white;
   text-align: center;
   a {
