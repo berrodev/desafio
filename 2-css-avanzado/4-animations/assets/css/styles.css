@@ -211,6 +211,16 @@ nav {
   width: 100%;
   object-fit: cover;
 }
+
+.speaker-image {
+  position: absolute;
+  animation: sound 0.5s infinite alternate;
+  bottom: 20px;
+  right: 60px;
+  width: 100px;
+  z-index: 2;
+}
+
 /* Animations */
 @keyframes rotate {
   from {
@@ -219,10 +229,6 @@ nav {
   to {
     transform: rotate(360deg);
   }
-}
-
-.speaker-image {
-  animation: sound 0.5s infinite alternate;
 }
 
 @keyframes sound {
