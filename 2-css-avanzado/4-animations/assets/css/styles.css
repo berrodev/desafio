@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #efefef;
@@ -54,6 +55,14 @@ main {
   overflow: scroll;
   grid-area: main;
   padding-right: 20px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  min-height: 100vh;
+  padding-inline: 20px;
 }
 footer {
   grid-area: footer;
