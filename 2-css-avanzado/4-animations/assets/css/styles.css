@@ -197,6 +197,9 @@ nav {
   right: 60px;
   width: 100px;
   z-index: 2;
+  @media (width< 576px) {
+    display: none;
+  }
 }
 #top-artists {
   background-color: #fff;
