@@ -124,6 +124,7 @@ footer {
   #disc-image {
     width: 60px;
     object-fit: cover;
+    animation: rotate 5s linear infinite;
   }
   @media (width> 575px) {
     flex-direction: column;
@@ -167,5 +168,14 @@ nav {
   transition: color 0.3s;
   &:hover {
     fill: rgb(191, 191, 191);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
