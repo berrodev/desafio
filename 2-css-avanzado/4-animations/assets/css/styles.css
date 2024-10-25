@@ -115,16 +115,22 @@ footer {
 
 .title {
   display: flex;
-  flex-direction: column;
   gap: 10px;
+  align-items: center;
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    text-transform: uppercase;
   }
   #disc-image {
-    width: 150px;
+    width: 60px;
     object-fit: cover;
+  }
+  @media (width> 575px) {
+    flex-direction: column;
+
+    #disc-image {
+      width: 150px;
+    }
   }
 }
 
