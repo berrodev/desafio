@@ -166,7 +166,7 @@ nav {
   align-items: center;
   padding: 20px;
   justify-content: space-between;
-
+  min-height: 400px;
   .disc-cover {
     position: absolute;
     width: 260px;
@@ -191,6 +191,7 @@ nav {
 }
 .album-disc {
   width: 100%;
+  max-width: 260px;
   object-fit: cover;
 }
 
